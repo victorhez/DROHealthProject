@@ -150,6 +150,7 @@ class HomeView extends GetView<HomeController> {
                         onChanged: (value) {
                           controller.searchQuery.text = value;
                           controller.value.value = value;
+                          controller.buildSearchList();
                         },
                         decoration: InputDecoration(
                             border: InputBorder.none,
